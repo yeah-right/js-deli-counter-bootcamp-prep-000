@@ -12,7 +12,7 @@ function nowServing(katzDeliLine) {
   } else {
     for (i = 0; i < katzDeliLine.length; i++) {
       var currentCustomer = katzDeliLine[i];
-      
+      katzDeliLine[i]
     }
   }
 }
