@@ -27,8 +27,8 @@ function currentLine(queue) {
   if (queue.length === 0) {
     return "The line is currently empty."
   } else {
-    // for (let i = 0; i < queue.length; i++) {
-    //   queueList += (i + 1 + ". " + queue[i])
-    // }
+    for (let i = 0; i < queue.length; i++) {
+      queueList += (i + 1 + ". " + queue[i])
+    }
   }
 }
