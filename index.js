@@ -13,7 +13,8 @@ function nowServing(katzDeliLine) {
     for (let i = 0; i < katzDeliLine.length; i++) {
       var currentCustomer = katzDeliLine[i];
       katzDeliLine.slice(1, katzDeliLine.length - 1);
-      return "Currently Serving " + currentCustomer;
+      return "Currently Serving " + currentCustomer + ".";
     }
   }
 }
+
