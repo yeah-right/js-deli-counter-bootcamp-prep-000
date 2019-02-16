@@ -12,7 +12,8 @@ function nowServing(katzDeliLine) {
   } else {
     for (i = 0; i < katzDeliLine.length; i++) {
       var currentCustomer = katzDeliLine[i];
-      katzDeliLine.slice()
+      katzDeliLine.slice(1, katzDeliLine.length - 1);
+      return currentCustomer;
     }
   }
 }
