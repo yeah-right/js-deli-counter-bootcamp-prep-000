@@ -31,4 +31,5 @@ function currentLine(queue) {
       queueList += (i + 1 + ". " + queue[i])
     }
   }
+  return queueList;
 }
