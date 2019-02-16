@@ -25,10 +25,14 @@ function currentLine(queue) {
   var queueList = "The line is currently: ";
   
   if (queue.length === 0) {
-    return "The line is currently empty."
+    return "The line is currently empty.";
   } else {
     for (let i = 0; i < queue.length; i++) {
-      queueList += (i + 1 + ". " + queue[i] + ", ")
+      if(i === queue.length -1) {
+        queueList += (i + 1 + ". " + queue[i]);
+      } else {
+        queueList += (i + 1 + ". " + queue[i] + ", ")
+      }
     }
   }
   return queueList;
