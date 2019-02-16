@@ -3,7 +3,5 @@ var katzDeliLine = [];
 function takeANumber(customerQueue, customerName) {
   customerQueue.push(customerName);
   
-  for (i = 0; i < customerQueue.length; i++) {
-    
-  }
+  return "Welcome, " + customerName + ". You are number " + customerQueue.length + " in line.";
 }
