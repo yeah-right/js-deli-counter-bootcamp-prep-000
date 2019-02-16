@@ -7,23 +7,28 @@ function takeANumber(customerQueue, customerName) {
 }
 
 function nowServing(katzDeliLine) {
-  // for (let i = 0; i < katzDeliLine.length; i++) {
-  //   if (katzDeliLine.length === 0) {
-  //     return "There is nobody waiting to be served!";
-  //   } else {
-  //     return katzDeliLine[i];
-  //     katzDeliLine.shift();
-  //     //use .shift()
-  //   }
-  //}
   if (katzDeliLine.length === 0) {
+    
     return "There is nobody waiting to be served!";
+    
   } else {
+    
     for (let i = 0; i < katzDeliLine.length; i++) {
       var currentCustomer = katzDeliLine.shift();
       return "Currently serving " + currentCustomer + ".";
     }
+    
   }
-
 }
 
+function currentLine(queue) {
+  var queueList = "The line is currently: ";
+  
+  if (queue.length === 0) {
+    return "The line is currently empty."
+  } else {
+    // for (let i = 0; i < queue.length; i++) {
+    //   queueList += (i + 1 + ". " + queue[i])
+    // }
+  }
+}
